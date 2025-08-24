@@ -81,8 +81,8 @@ const ContactPage: React.FC = () => {
       title: "Location",
       details: [
         "Merisho Village",
-        "Kiambu County",
-        "Near Merisho Primary School",
+        "Kajiado County",
+        "Near SGR Railway",
       ],
       action: "Get Directions",
     },
@@ -120,7 +120,7 @@ const ContactPage: React.FC = () => {
       name: "Father Michael Kimani",
       role: "Spiritual Director",
       phone: "+254 722 123 456",
-      email: "frmichael@merishoparish.org",
+      email: "frmichael@nkoroiparish.org",
     },
     {
       name: "Mary Wanjiku",
@@ -154,7 +154,7 @@ const ContactPage: React.FC = () => {
           </div>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Contact Us</h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Get in touch with St. Bhakita Catholic Youths. We'd love to hear
+            Get in touch with St. Bakhita Catholic Youths. We'd love to hear
             from you and welcome you to our community
           </p>
         </div>
