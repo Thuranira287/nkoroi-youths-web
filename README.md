@@ -13,18 +13,29 @@ Testing: Vitest
 UI: Radix UI + TailwindCSS 3 + Lucide React icons
 
 📂 Project Structure
+
 client/                   # React SPA frontend
+
 ├── pages/                # Route components (Index.tsx = home)
+
 ├── components/ui/        # Pre-built UI component library
+
 ├── App.tsx               # SPA routing setup
+
 └── global.css            # TailwindCSS theming and global styles
 
+
 server/                   # Express API backend
+
 ├── index.ts              # Main server setup (express config + routes)
+
 └── routes/               # API handlers
 
+
 shared/                   # Types used by both client & server
+
 └── api.ts                # Shared API interfaces
+
 
 🌐 SPA Routing System
 
