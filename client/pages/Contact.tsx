@@ -53,7 +53,7 @@ const ContactPage: React.FC = () => {
     {
       icon: <Church className="h-6 w-6 text-blue-600" />,
       title: "Parish Office",
-      details: ["Merisho Catholic Church", "P.O. Box 123, Kiambu", "Kenya"],
+      details: ["Bakhita Catholic Church", "P.O. Box 123, Ngong", "Kenya"],
       action: "Visit Us",
     },
     {
@@ -70,8 +70,8 @@ const ContactPage: React.FC = () => {
       icon: <Mail className="h-6 w-6 text-purple-600" />,
       title: "Email",
       details: [
-        "youth@merishoparish.org",
-        "info@merishoparish.org",
+        "youth@nkoroiparish.org",
+        "info@stbakhita.org",
         "Quick response within 24 hours",
       ],
       action: "Email Us",
@@ -126,19 +126,19 @@ const ContactPage: React.FC = () => {
       name: "Mary Wanjiku",
       role: "Youth Coordinator",
       phone: "+254 733 234 567",
-      email: "mary@merishoparish.org",
+      email: "mary@stbakhita.org",
     },
     {
       name: "John Mwangi",
       role: "Secretary",
       phone: "+254 712 345 678",
-      email: "john@merishoparish.org",
+      email: "john@stbakhita.org",
     },
     {
       name: "Grace Njeri",
       role: "Treasurer",
       phone: "+254 721 456 789",
-      email: "grace@merishoparish.org",
+      email: "grace@stbakhita.org",
     },
   ];
 
