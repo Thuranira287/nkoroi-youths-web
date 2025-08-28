@@ -236,7 +236,7 @@ const AdminDashboard: React.FC = () => {
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-gray-900">Admin Dashboard</h1>
           <p className="text-gray-600 mt-2">
-            Welcome back, {user?.username}. Manage St. Bhakita Catholic Youths content.
+            Welcome back, {user?.username}. Manage St. Bakhita Catholic Youths content.
           </p>
         </div>
 

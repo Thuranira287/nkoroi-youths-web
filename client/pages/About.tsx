@@ -216,7 +216,7 @@ const AboutPage: React.FC = () => {
                 <p>
                   St. Bakhita Catholic Youths was founded in 2018 by a group of
                   passionate young Catholics who desired to create a vibrant
-                  community for spiritual growth and fellowship at Merisho
+                  community for spiritual growth and fellowship at Nkoroi
                   Parish. Named after St. Josephine Bakhita, the patron saint of
                   Sudan and human trafficking survivors, our group embodies her
                   spirit of faith, hope, and service.
@@ -321,7 +321,7 @@ const AboutPage: React.FC = () => {
               </div>
               <div className="flex items-center justify-center space-x-3">
                 <Calendar className="h-5 w-5 text-gray-500" />
-                <span className="text-gray-700">Sundays after 9 AM Mass</span>
+                <span className="text-gray-700">Sundays after 10:30AM Mass</span>
               </div>
               <div className="flex items-center justify-center space-x-3">
                 <Phone className="h-5 w-5 text-gray-500" />
