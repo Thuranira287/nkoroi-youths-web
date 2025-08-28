@@ -984,8 +984,8 @@ const CatholicBiblePage: React.FC = () => {
                             </div>
                           </div>
                           <p
-                            className="text-gray-700 leading-relaxed"
-                            style={{ fontSize: `${fontSize}px` }}
+                            className={`text-gray-700 leading-relaxed ${fontSize === 14 ? "text-sm" : fontSize === 16 ? "text-base" : "text-lg"
+                              }`}
                             dangerouslySetInnerHTML={{
                               __html: result.highlight || result.text,
                             }}
@@ -1117,11 +1117,16 @@ const CatholicBiblePage: React.FC = () => {
                 </CardHeader>
                 <CardContent>
                   <div
-                    className="space-y-6"
-                    style={{
-                      fontSize: `${fontSize}px`,
-                      lineHeight: lineHeight,
-                    }}
+                    className={`
+                      space-y-6
+                      ${fontSize === 14 ? "text-sm" : ""}
+                      ${fontSize === 16 ? "text-base" : ""}
+                      ${fontSize === 18 ? "text-lg" : ""}
+                      ${fontSize === 20 ? "text-xl" : ""}
+                      ${lineHeight === 1.5 ? "leading-snug" : ""}
+                      ${lineHeight === 1.75 ? "leading-relaxed" : ""}
+                      ${lineHeight === 2 ? "leading-loose" : ""}
+                    `}
                   >
                     {selectedChapter.verses.map((verse: BibleVerse) => (
                       <div

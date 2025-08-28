@@ -21,7 +21,7 @@ import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Announcement, PaginatedResponse } from "@shared/api";
 import { useToast } from "@/components/ui/use-toast";
-import AnnouncementFormModal from "../components/forms/AnnouncementFormModal";
+import AnnouncementFormModal from '../components/forms/AnnouncementFormModal';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -33,6 +33,19 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
+
+interface AnnouncementFormModal {
+  trigger: React.ReactNode;
+  isOpen: boolean;
+  onClose: () => void;
+  onSubmit: (AnnouncementFormModal: Announcement) => void;
+  title: string;
+  initialData?: Announcement;
+  album?: Announcement;
+  onSuccess?: (AnnouncementFormModal: Announcement) => void;
+  //onOpen: () => void;
+  //onOpenChange: (isOpen : boolean) => void;
+}
 
 const AnnouncementsPage: React.FC = () => {
   const { user, isAdmin } = useAuth();
@@ -453,6 +466,7 @@ const AnnouncementsPage: React.FC = () => {
         {/* Create Form Modal */}
         {showCreateForm && (
           <AnnouncementFormModal
+            trigger={<Button>Create New Album</Button>}
             isOpen={showCreateForm}
             onClose={() => setShowCreateForm(false)}
             onSubmit={handleCreateAnnouncement}
@@ -463,6 +477,7 @@ const AnnouncementsPage: React.FC = () => {
         {/* Edit Form Modal */}
         {showEditForm && selectedAnnouncement && (
           <AnnouncementFormModal
+            trigger={<Button>Create New Album</Button>}
             isOpen={showEditForm}
             onClose={() => {
               setShowEditForm(false);

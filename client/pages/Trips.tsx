@@ -22,7 +22,7 @@ import { Badge } from "@/components/ui/badge";
 import { TripAlbum, Photo, PaginatedResponse } from "@shared/api";
 import { useToast } from "@/components/ui/use-toast";
 import TripAlbumFormModal from "../components/forms/TripAlbumFormModal";
-import FileUpload from '../../../../merisho-hub/client/components/FileUpload';
+//import FileUpload from '../../../../merisho-hub/client/components/FileUpload';
 import {
   AlertDialog,
   AlertDialogAction,

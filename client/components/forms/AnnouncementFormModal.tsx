@@ -10,8 +10,13 @@ import { CreateAnnouncementRequest, Announcement } from '@shared/api';
 
 interface AnnouncementFormModalProps {
   trigger: React.ReactNode;
+  isOpen: boolean;
+  onClose: () => void;
+  onSubmit: (AnnouncementFormModal: Announcement) => void;
   announcement?: Announcement;
-  onSuccess: (announcement: Announcement) => void;
+  onSuccess?: (announcement: Announcement) => void;
+  title: string;
+  initialData?: Announcement;
 }
 
 const AnnouncementFormModal: React.FC<AnnouncementFormModalProps> = ({
